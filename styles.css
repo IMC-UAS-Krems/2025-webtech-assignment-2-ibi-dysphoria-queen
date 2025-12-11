@@ -1,0 +1,96 @@
+#checkout {
+  display: none;
+}
+#shop{
+    display: block;
+}
+#history{
+    display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  text-align: center;
+
+  margin: 0;
+
+  padding: 20px;
+  background-color: lightblue;
+}
+
+
+a {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+}
+
+p {
+  color: purple;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+h3 {
+  color: purple;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+div.listcont{
+  text-align: center;
+}
+ul {
+  text-align: center;
+  color: black;
+  font-family: monospace;
+  font-size:xx-large;
+  text-align: justify;
+}
+
+.list-group{
+  padding-bottom: 10px;
+    align-self: end;
+
+}
+  p {
+    text-align: right;
+    color: purple;
+    font-size: medium;
+
+    font-family: monospace;
+  }
+
+
+.image{
+  height: 500px;
+}
+header{
+  font-size: small;
+  color: darkblue;
+  font-family: 'Times New Roman', Times, serif;
+  a:link {
+  color: dodgerblue;
+}
+
+a:visited {
+  color: dodgerblue;
+}
+
+a:hover {
+  color: dodgerblue;
+}
+}
+.card{
+  font-size: xx-large;
+  color: black;
+  background-color: darkblue;
+  font-family:'Times New Roman', Times, serif;
+  a1{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+.container{
+  text-align: center;
+}

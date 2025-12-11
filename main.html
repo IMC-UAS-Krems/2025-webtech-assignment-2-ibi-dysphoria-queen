@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+    <!-- jQuery (required for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Popper.js (required for Bootstrap dropdowns) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+    <!-- Bootstrap's JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap's CSS (optional but recommended) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap demo</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body style="margin: auto;max-width: 80%;">
+    <script src="scripts.js" defer></script>
+    <div style="padding: 5px; margin-bottom: 20px;" class="card">
+        <div class="card-header">
+            <h1>
+                <button style="padding: 10px; margin-top: 20px; float: right;" type="button" id=next onclick="next()"><img src="images/1413908.png" style="max-width: 100px;"></button>
+            Fruit4All</h1>
+            <a1>Every purchase a new productive tree for the community</a1>
+            
+        </div>
+    </div>
+    <div class="listcont">
+    <ul id="history">
+    </ul>
+</div>
+
+    <div class="container-fluid" id=shop>
+        <div class="row">
+        <div class="col-4">
+            <div class="list-group">
+                <img src="images/apple-tree-orchard-apfelernte-preview.jpg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>apple tree</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>1.69$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('apple tree',1.69)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="list-group">
+                <img src="images/grape.jpeg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>grape vine</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>2.69$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('grape vine',2.69)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="list-group">
+                <img src="images/shaft-oak-pedunculate-oak-quercus-robur-1f0346-1024.jpg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>oak</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>1.9$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('oak',1.9)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="list-group">
+                <img src="images/how-to-grow-your-own-olive-oil-1.jpg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>olive tree</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>4.19$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('olive tree',4.19)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+
+            <div class="list-group">
+                <img src="images/tree-nut-juglans-regia-walnut-88af86-1024.jpg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>walnut</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>6.7$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('walnut',6.7)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+
+            <div class="list-group">
+                 <img src="images/152587225857523713.webp" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>cork tree</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>9.9$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('cork tree',9.9)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="list-group">
+                <img src="images/pear-on-tree-1416079482MKB.jpg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>pear tree</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>10.9$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('pear tree',10.9)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+
+            <div class="list-group">
+                 <img src="images/images.jpeg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>plum tree</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>2.9$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('plum tree',2.9)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+
+            <div class="list-group">
+               <img src="images/group-of-peaches-growing-on-a-tree.jpg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>peach tree</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>11.2$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('peach tree',11.2)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+
+            <div class="list-group">
+                <img src="images/Untitled.jpeg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>cherry tree</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>7.6$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('cherry tree',7.6)">
+                    buy
+                </button>
+            </div>
+        </div>
+        <div class="col-4">
+
+            <div class="list-group">
+                <img src="images/almond.jpeg" class="img">
+                <button type="button" class="list-group-item list-group-item-action" disabled>almond tree</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>17.1$</button>
+                <button type="button" class="list-group-item list-group-item-action active"
+                    onclick="addprice('almond tree',17.1)">
+                    buy
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid" id="checkout">
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" value="" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+      Please provide a name.
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+      Please provide a name.
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Phone number</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">+41</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please give your phone number.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <select class="form-select" id="validationDefault04"  style="padding: 8px; padding-left: 80px; padding-right: 80px;  margin-top: 30px;" required>
+      <option selected disabled value="state">state</option>
+      <option>Burgesland</option>
+      <option>Carinthia</option>
+      <option>Lower Austria</option>
+      <option>Salzburg</option>
+      <option>Styria</option>
+      <option>Tyrol</option>
+      <option>Upper Austria</option>
+      <option>Vienna</option>
+      <option>Vorarlberg</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Adress</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid adress.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+    </div>
+</body>
+
+
+</html>
