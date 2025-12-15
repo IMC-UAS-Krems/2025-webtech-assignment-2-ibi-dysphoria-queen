@@ -5,27 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
-    <!-- jQuery (required for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Popper.js (required for Bootstrap dropdowns) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-
-    <!-- Bootstrap's JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- Bootstrap's CSS (optional but recommended) -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Bootstrap demo</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
+
 <body style="margin: auto;max-width: 80%;">
-    <script src="scripts.js" defer></script>
+    <script src="js/scripts.js" defer></script>
     <div style="padding: 5px; margin-bottom: 20px;" class="card">
         <div class="card-header">
             <h1>
-                <button style="padding: 10px; margin-top: 20px; float: right;" type="button" id=next onclick="next()"><img src="images/1413908.png" style="max-width: 100px;"></button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="float: right;" onclick="makehistory2()">
+  <img src="img/1413908.png" style="max-width: 100px;">
+</button>
+              
             Fruit4All</h1>
             <a1>Every purchase a new productive tree for the community</a1>
             
@@ -40,7 +35,7 @@
         <div class="row">
         <div class="col-4">
             <div class="list-group">
-                <img src="images/apple-tree-orchard-apfelernte-preview.jpg" class="img">
+                <img src="img/apple-tree-orchard-apfelernte-preview.jpg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>apple tree</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>1.69$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -51,7 +46,7 @@
         </div>
         <div class="col-4">
             <div class="list-group">
-                <img src="images/grape.jpeg" class="img">
+                <img src="img/grape.jpeg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>grape vine</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>2.69$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -62,7 +57,7 @@
         </div>
         <div class="col-4">
             <div class="list-group">
-                <img src="images/shaft-oak-pedunculate-oak-quercus-robur-1f0346-1024.jpg" class="img">
+                <img src="img/shaft-oak-pedunculate-oak-quercus-robur-1f0346-1024.jpg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>oak</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>1.9$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -73,7 +68,7 @@
         </div>
         <div class="col-4">
             <div class="list-group">
-                <img src="images/how-to-grow-your-own-olive-oil-1.jpg" class="img">
+                <img src="img/how-to-grow-your-own-olive-oil-1.jpg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>olive tree</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>4.19$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -85,7 +80,7 @@
         <div class="col-4">
 
             <div class="list-group">
-                <img src="images/tree-nut-juglans-regia-walnut-88af86-1024.jpg" class="img">
+                <img src="img/tree-nut-juglans-regia-walnut-88af86-1024.jpg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>walnut</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>6.7$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -97,7 +92,7 @@
         <div class="col-4">
 
             <div class="list-group">
-                 <img src="images/152587225857523713.webp" class="img">
+                 <img src="img/152587225857523713.webp" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>cork tree</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>9.9$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -108,7 +103,7 @@
         </div>
         <div class="col-4">
             <div class="list-group">
-                <img src="images/pear-on-tree-1416079482MKB.jpg" class="img">
+                <img src="img/pear-on-tree-1416079482MKB.jpg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>pear tree</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>10.9$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -120,7 +115,7 @@
         <div class="col-4">
 
             <div class="list-group">
-                 <img src="images/images.jpeg" class="img">
+                 <img src="img/images.jpeg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>plum tree</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>2.9$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -132,7 +127,7 @@
         <div class="col-4">
 
             <div class="list-group">
-               <img src="images/group-of-peaches-growing-on-a-tree.jpg" class="img">
+               <img src="img/group-of-peaches-growing-on-a-tree.jpg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>peach tree</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>11.2$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -144,7 +139,7 @@
         <div class="col-4">
 
             <div class="list-group">
-                <img src="images/Untitled.jpeg" class="img">
+                <img src="img/Untitled.jpeg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>cherry tree</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>7.6$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -156,7 +151,7 @@
         <div class="col-4">
 
             <div class="list-group">
-                <img src="images/almond.jpeg" class="img">
+                <img src="img/almond.jpeg" class="img">
                 <button type="button" class="list-group-item list-group-item-action" disabled>almond tree</button>
                 <button type="button" class="list-group-item list-group-item-action" disabled>17.1$</button>
                 <button type="button" class="list-group-item list-group-item-action active"
@@ -239,20 +234,40 @@
   </div>
   <div class="col-12">
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
       <label class="form-check-label" for="invalidCheck">
         Agree to terms and conditions
       </label>
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      
       <div class="invalid-feedback">
         You must agree before submitting.
       </div>
     </div>
   </div>
   <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
+    <button class="btn btn-primary" type="submit" >Submit form</button>
   </div>
 </form>
     </div>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" id="shop">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">cart:</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="listcont">
+    <ul id="history2">
+    </ul>
+</div>
+    <div>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id=next onclick="next()">Checkout
+</button>
+    </div>
+    
+    </div>
+  </div>
 </body>
 
 

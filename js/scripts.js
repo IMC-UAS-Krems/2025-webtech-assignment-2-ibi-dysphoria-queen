@@ -32,9 +32,8 @@ console.log(x,y)}
     })
 })()
 function next(){
-    console.log("getjiggywithit")
+  //source w3 display none
     if(increment==0){
-            console.log("getjiggywithit")
        increment+=1 
        var x = document.getElementById("checkout");
   if (x.style.display === "none") {
@@ -86,8 +85,46 @@ var x = document.getElementById("checkout");
     }}
 
 function makehistory(){
-    console.log("i loev you!!!!!!!!!!!!!!");
     const histlist = document.getElementById("history");
+    histlist.innerhtml ="";
+    i=0;
+    for (let entry of shoppinglist){
+    console.log(entry)
+        const li = document.createElement("li")
+        li.textContent = entry+":"+price[i];
+        histlist.appendChild(li);
+        i=+1
+}
+var sum =0
+var c=0
+for (let i = 0; i < price.length; i++ ) {
+  sum += price[i];
+  c+=1
+}
+    li = document.createElement("li")
+    li.textContent = "total before tax"+":"+sum;
+    histlist.appendChild(li);
+    li = document.createElement("li")
+    li.textContent = "tax"+":"+sum*0.2;
+    histlist.appendChild(li);
+    if (c<3){
+    li = document.createElement("li")
+    li.textContent = "total"+":"+sum*1.2;
+    histlist.appendChild(li);}
+    else{
+    li = document.createElement("li")
+    li.textContent = "big spender discount"+":"+sum*1.2*0.2;
+    histlist.appendChild(li); 
+     li = document.createElement("li")
+    li.textContent = "total"+":"+sum*1.2*0.8;
+    histlist.appendChild(li); 
+    }
+   }
+function makehistory2(){
+    const histlist = document.getElementById("history2");
+    while (histlist.hasChildNodes()) {
+  histlist.removeChild(histlist.firstChild);
+}
     histlist.innerhtml ="";
     i=0;
     for (let entry of shoppinglist){
